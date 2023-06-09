@@ -1,0 +1,22 @@
+--Create a grocery store database
+
+CREATE TABLE store (id INTEGER PRIMARY KEY, item TEXT, quantity INTEGER, price INTEGER, aisle INTEGER);
+
+INSERT INTO store VALUES
+(1, "tank top", 10, 5.00, 1),
+(2, "crop top", 15, 8.00, 1),
+(3, "leggings", 20, 10.00, 2),
+(4, "pants", 20, 15.00,2),
+(5, "bras" , 30, 20.00, 3),
+(6, "underwear", 30, 15.00, 3),
+(7, "graphic tee", 10, 15.00, 1),
+(8, "boxers", 10, 13.00, 4),
+(9, "jeans", 15, 30.00, 2),
+(10, "corsets", 20, 40.00, 3),
+(11, "stockings", 20, 40.00, 3),
+(12, "bikinis", 50, 50.00, 5),
+(13, "swin trunks", 50, 55.00, 5),
+(14, "goggles", 30, 15.00, 5),
+(15, "swim caps", 30, 20.00, 5)
+;
+SELECT * FROM store WHERE price > 10 ORDER BY price;
